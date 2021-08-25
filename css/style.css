@@ -27,6 +27,39 @@ h1 {
 	margin-bottom: 15px;
 }
 
+.tab2{
+	tab-size: 2;
+}
+
+.tab4{
+	tab-size: 4;
+}
+.tab8{
+	tab-size: 8;
+}
+
+.fontsmall{
+	font-size: small;
+
+}
+.fontxsmall{
+	font-size: x-small;
+}
+
+.center{
+	text-align: center;
+}
+
+.margin-left-sm {
+	margin-left: 8px;
+  }
+
+.centerimg {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 18%;
+}
 .showcase {
 	height: 100vh;
 	display: flex;
