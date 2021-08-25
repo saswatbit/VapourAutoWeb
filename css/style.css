@@ -54,6 +54,12 @@ h1 {
 	margin-left: 8px;
   }
 
+.centerimg{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
 .showcase {
 	height: 100vh;
 	display: flex;
