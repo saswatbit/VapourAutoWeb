@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Mon Oct 07 2019 05:18:37 GMT+0000 (UTC)  -->
+<html data-wf-page="5d9447129757b80f9d956599" data-wf-site="5d83289ce8178d75c462eb9b">
+<head>
+  <meta charset="utf-8">
+  <title>Cart Page</title>
+  <meta content="Cart Page" property="og:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/asas-framework.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Gothic A1:100,200,300,regular,500,600,700,800,900"]  }});</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="https://via.placeholder.com/1000x600.png?text=IMAGE" rel="apple-touch-icon">
+</head>
+<body>
+  <div class="section-header position-absolute">
+    <div class="container space-between">
+      <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav">
+        <div class="navbar-container flexh-space-between w-container">
+          <a href="index.html" class="brand order-first w-nav-brand">
+            <h3 class="logotype on-dark">S O R U M</h3>
+          </a>
+          <nav role="navigation" class="nav-menu order-last nav-on-dark w-nav-menu"><a href="about.html" class="nav-link on-dark w-nav-link">About Us</a><a href="service.html" class="nav-link on-dark w-nav-link">Services</a><a href="blog-page.html" class="nav-link on-dark w-nav-link">Blog</a>
+            <div data-hover="1" data-delay="0" data-w-id="f991f64e-74af-0997-82ad-7ee44addf741" class="nav-dropdown w-dropdown">
+              <div class="nav-link on-dark w-dropdown-toggle">
+                <div class="w-icon-dropdown-toggle"></div>
+                <div>Product</div>
+              </div>
+              <nav class="dropdown-on-dark w-dropdown-list"><a href="product-page.html" class="dropdown-link dropdown-on-dark w-dropdown-link">Car Listing</a><a href="spare-part-page.html" class="dropdown-link w-dropdown-link">Spare Part</a></nav>
+            </div><a href="contact.html" class="nav-link on-dark w-nav-link">Contact</a>
+            <div class="col no-margin-bottom-lg padding-nav-link position-relative"><a href="cart-page.html" class="nav-link on-dark shopping-cart w-nav-link w--current"></a>
+              <div class="text-xsmall position-absolute cart-number">0</div>
+            </div>
+            <a href="#" class="button-primary button-primary-small margin-left md-margin-bottom-small w-inline-block">
+              <div class="button-primary-text">Sign up</div>
+            </a>
+          </nav>
+          <div class="menu-button order-last hamburger-on-dark w-nav-button">
+            <div class="iconfont is-16px on-dark"><em class="iconfont__no-italize"></em></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section is-header is-half-dark section-with-bg bg1">
+    <div class="container flex-horizontal">
+      <div class="col lg-5 flexv-justify-center md-12">
+        <div class="breadcrumb margin-bottom-double"><a href="#">Home</a><span class="fa margin-left-small margin-right-small is-xsmall"></span>Cart Page</div>
+        <div>
+          <h1>Cart Page</h1>
+          <div class="text-medium">Your shopping basket</div>
+        </div>
+      </div>
+      <div class="col lg-1"></div>
+    </div>
+  </div>
+  <div class="section is-dark no-padding-bottom hidden-md">
+    <div class="container flexh-justify-center flexh-align-center no-wrap margin-bottom-double">
+      <div class="col-2 column1 no-margin-bottom-lg"></div>
+      <div class="col-2 column2 no-margin-bottom-lg"></div>
+      <div class="col-2 column3 no-margin-bottom-lg">
+        <div class="is-bold">Product</div>
+      </div>
+      <div class="col-2 column4 no-margin-bottom-lg">
+        <div class="is-bold">Price</div>
+      </div>
+      <div class="col-2 column4 no-margin-bottom-lg">
+        <div class="is-bold">Quantity</div>
+      </div>
+      <div class="col-2 column4 no-margin-bottom-lg">
+        <div class="is-bold">Total</div>
+      </div>
+    </div>
+    <div class="container margin-bottom-double">
+      <div class="col lg-12 no-margin-bottom">
+        <div class="hr-2"></div>
+      </div>
+    </div>
+    <div class="container flexh-justify-center flexh-align-center no-wrap margin-bottom-double">
+      <div class="col-2 column1 no-margin-bottom-lg">
+        <div class="nav-link on-dark delete-cart"></div>
+      </div>
+      <div class="col-2 column2 no-margin-bottom-lg"><img src="https://via.placeholder.com/1000x600.png?text=IMAGE 1500w" sizes="(max-width: 991px) 100vw, 15vw" alt=""></div>
+      <div class="col-2 column3 no-margin-bottom-lg"><a href="spare-part-detail.html" class="nav-link on-dark">Clutch disk and basket for Ferrari</a></div>
+      <div class="col-2 column4 no-margin-bottom-lg">
+        <div>$9000</div>
+      </div>
+      <div class="col-2 column4 no-margin-bottom-lg">
+        <div class="no-margin-bottom w-form">
+          <form id="email-form" name="email-form" data-name="Email Form"><input type="text" class="no-margin-bottom w-input" maxlength="256" name="name-2" data-name="Name 2" id="name-2"></form>
+          <div class="w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-2 column4 no-margin-bottom-lg">
+        <div>$900</div>
+      </div>
+    </div>
+    <div class="container margin-bottom-double">
+      <div class="col lg-12 no-margin-bottom">
+        <div class="hr-2"></div>
+      </div>
+    </div>
+    <div class="container flexh-justify-center flexh-align-center no-wrap margin-bottom-double">
+      <div class="col-2 column1 no-margin-bottom-lg">
+        <div class="nav-link on-dark delete-cart"></div>
+      </div>
+      <div class="col-2 column2 no-margin-bottom-lg"><img src="https://via.placeholder.com/1000x600.png?text=IMAGE 1500w" sizes="(max-width: 991px) 100vw, 15vw" alt=""></div>
+      <div class="col-2 column3 no-margin-bottom-lg"><a href="spare-part-detail.html" class="nav-link on-dark">Turbo engine for Mercedes Benz</a></div>
+      <div class="col-2 column4 no-margin-bottom-lg">
+        <div>$12000</div>
+      </div>
+      <div class="col-2 column4 no-margin-bottom-lg">
+        <div class="no-margin-bottom w-form">
+          <form id="email-form" name="email-form" data-name="Email Form"><input type="text" class="no-margin-bottom w-input" maxlength="256" name="name-2" data-name="Name 2" id="name-2"></form>
+          <div class="w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-2 column4 no-margin-bottom-lg">
+        <div>$12000</div>
+      </div>
+    </div>
+    <div class="container margin-bottom-double">
+      <div class="col lg-12 no-margin-bottom">
+        <div class="hr-2"></div>
+      </div>
+    </div>
+    <div class="container flexh-justify-center flexh-align-center no-wrap margin-bottom-double">
+      <div class="col-2 column1 no-margin-bottom-lg">
+        <div class="nav-link on-dark delete-cart"></div>
+      </div>
+      <div class="col-2 column2 no-margin-bottom-lg"><img src="https://via.placeholder.com/1000x600.png?text=IMAGE 1500w" sizes="(max-width: 991px) 100vw, 15vw" alt=""></div>
+      <div class="col-2 column3 no-margin-bottom-lg"><a href="spare-part-detail.html" class="nav-link on-dark">TextBMW car brake disc Link</a></div>
+      <div class="col-2 column4 no-margin-bottom-lg">
+        <div>$9000</div>
+      </div>
+      <div class="col-2 column4 no-margin-bottom-lg">
+        <div class="no-margin-bottom w-form">
+          <form id="email-form" name="email-form" data-name="Email Form"><input type="text" class="no-margin-bottom w-input" maxlength="256" name="name-2" data-name="Name 2" id="name-2"></form>
+          <div class="w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-2 column4 no-margin-bottom-lg">
+        <div>$9000</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="col lg-12 no-margin-bottom">
+        <div class="hr-2"></div>
+      </div>
+    </div>
+  </div>
+  <div class="section is-dark hidden-md">
+    <div class="container flexh-justify-center flexh-align-center no-wrap margin-bottom">
+      <div class="col-2 column1 no-margin-bottom-lg"></div>
+      <div class="col-2 column2 no-margin-bottom-lg"></div>
+      <div class="col-2 column3 no-margin-bottom-lg"></div>
+      <div class="col-2 column5 no-margin-bottom-lg">
+        <div class="is-bold size-h3">Cart totals</div>
+      </div>
+    </div>
+    <div class="container flexh-justify-center flexh-align-center no-wrap margin-bottom-small">
+      <div class="col-2 column1 no-margin-bottom-lg"></div>
+      <div class="col-2 column2 no-margin-bottom-lg"></div>
+      <div class="col-2 column3 no-margin-bottom-lg"></div>
+      <div class="col-2 column6 no-margin-bottom-lg">
+        <div class="is-bold low-text-contrast">Sub total</div>
+      </div>
+      <div class="col-2 column6 no-margin-bottom-lg">
+        <div class="is-bold">$30000</div>
+      </div>
+    </div>
+    <div class="container flexh-justify-center flexh-align-center no-wrap margin-bottom">
+      <div class="col-2 column1 no-margin-bottom-lg"></div>
+      <div class="col-2 column2 no-margin-bottom-lg"></div>
+      <div class="col-2 column3 no-margin-bottom-lg"></div>
+      <div class="col-2 column6 no-margin-bottom-lg">
+        <div class="is-bold low-text-contrast">Total</div>
+      </div>
+      <div class="col-2 column6 no-margin-bottom-lg">
+        <div class="is-bold">$30000</div>
+      </div>
+    </div>
+    <div class="container flexh-justify-center flexh-align-center no-wrap">
+      <div class="col-2 column1 no-margin-bottom-lg"></div>
+      <div class="col-2 column2 no-margin-bottom-lg"></div>
+      <div class="col-2 column3 no-margin-bottom-lg"></div>
+      <div class="col-2 column7">
+        <a data-w-id="ba7f27d1-a4d9-fa2e-06f5-fb9fd0ce637f" href="#" class="button-primary animated edit-width w-inline-block">
+          <div style="-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:1" class="button-primary-text">Proceed to checkout</div>
+          <div style="opacity:0;display:block;-webkit-transform:translate3d(0, 20PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 20PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 20PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 20PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button-primary-text for-hover">let&#x27;s go <span class="fa margin-left"></span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="section is-dark no-padding-bottom hidden-only-lg">
+    <div class="container flexh-justify-center flexh-align-center no-wrap margin-bottom-double">
+      <div class="col-2 column9 no-margin-bottom-lg">
+        <div class="nav-link on-dark delete-cart text-align-center"></div>
+      </div>
+    </div>
+    <div class="container margin-bottom-double">
+      <div class="col lg-12 no-margin-bottom">
+        <div class="hr-2"></div>
+      </div>
+    </div>
+    <div class="container flexh-justify-center flexh-align-center no-wrap margin-bottom-double">
+      <div class="col-2 column8 no-margin-bottom-lg">
+        <div class="is-bold">Product</div>
+      </div>
+      <div class="col-2 column8 no-margin-bottom-lg text-align-right"><a href="#" class="nav-link on-dark">Clutch disk and basket for Ferrari</a></div>
+    </div>
+    <div class="container margin-bottom-double">
+      <div class="col lg-12 no-margin-bottom">
+        <div class="hr-2"></div>
+      </div>
+    </div>
+    <div class="container flexh-justify-center flexh-align-center no-wrap margin-bottom-double">
+      <div class="col-2 column8 no-margin-bottom-lg">
+        <div class="is-bold">Price</div>
+      </div>
+      <div class="col-2 column8 no-margin-bottom-lg text-align-right">
+        <div>$9000</div>
+      </div>
+    </div>
+    <div class="container margin-bottom-double">
+      <div class="col lg-12 no-margin-bottom">
+        <div class="hr-2"></div>
+      </div>
+    </div>
+    <div class="container flexh-justify-center flexh-align-center no-wrap margin-bottom-double">
+      <div class="col-2 column8 no-margin-bottom-lg">
+        <div class="is-bold">Quantity</div>
+      </div>
+      <div class="col-2 column8 no-margin-bottom-lg text-align-right">
+        <div class="no-margin-bottom display-flex w-form">
+          <form id="email-form" name="email-form" data-name="Email Form" class="form"><input type="text" class="no-margin-bottom w-input" maxlength="256" name="name-2" data-name="Name 2" id="name-2"></form>
+          <div class="w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container margin-bottom-double">
+      <div class="col lg-12 no-margin-bottom">
+        <div class="hr-2"></div>
+      </div>
+    </div>
+    <div class="container flexh-justify-center flexh-align-center no-wrap margin-bottom-double">
+      <div class="col-2 column8 no-margin-bottom-lg">
+        <div class="is-bold">Total</div>
+      </div>
+      <div class="col-2 column8 no-margin-bottom-lg text-align-right">
+        <div>$9000</div>
+      </div>
+    </div>
+    <div class="container margin-bottom-double">
+      <div class="col lg-12 no-margin-bottom">
+        <div class="hr-2"></div>
+      </div>
+    </div>
+  </div>
+  <div class="section is-half-dark no-padding-bottom hidden-only-lg">
+    <div class="container flexh-justify-center flexh-align-center no-wrap margin-bottom-double is-half-dark">
+      <div class="col-2 column9 no-margin-bottom-lg">
+        <div class="nav-link on-dark delete-cart text-align-center"></div>
+      </div>
+    </div>
+    <div class="container margin-bottom-double">
+      <div class="col lg-12 no-margin-bottom">
+        <div class="hr-2"></div>
+      </div>
+    </div>
+    <div class="container flexh-justify-center flexh-align-center no-wrap margin-bottom-double">
+      <div class="col-2 column8 no-margin-bottom-lg">
+        <div class="is-bold">Product</div>
+      </div>
+      <div class="col-2 column8 no-margin-bottom-lg text-align-right"><a href="#" class="nav-link on-dark">Turbo engine for Mercedes Benz</a></div>
+    </div>
+    <div class="container margin-bottom-double">
+      <div class="col lg-12 no-margin-bottom">
+        <div class="hr-2"></div>
+      </div>
+    </div>
+    <div class="container flexh-justify-center flexh-align-center no-wrap margin-bottom-double">
+      <div class="col-2 column8 no-margin-bottom-lg">
+        <div class="is-bold">Price</div>
+      </div>
+      <div class="col-2 column8 no-margin-bottom-lg text-align-right">
+        <div>$12000</div>
+      </div>
+    </div>
+    <div class="container margin-bottom-double">
+      <div class="col lg-12 no-margin-bottom">
+        <div class="hr-2"></div>
+      </div>
+    </div>
+    <div class="container flexh-justify-center flexh-align-center no-wrap margin-bottom-double">
+      <div class="col-2 column8 no-margin-bottom-lg">
+        <div class="is-bold">Quantity</div>
+      </div>
+      <div class="col-2 column8 no-margin-bottom-lg text-align-right">
+        <div class="no-margin-bottom display-flex w-form">
+          <form id="email-form" name="email-form" data-name="Email Form" class="form"><input type="text" class="no-margin-bottom w-input" maxlength="256" name="name-2" data-name="Name 2" id="name-2"></form>
+          <div class="w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container margin-bottom-double">
+      <div class="col lg-12 no-margin-bottom">
+        <div class="hr-2"></div>
+      </div>
+    </div>
+    <div class="container flexh-justify-center flexh-align-center no-wrap margin-bottom-double">
+      <div class="col-2 column8 no-margin-bottom-lg">
+        <div class="is-bold">Total</div>
+      </div>
+      <div class="col-2 column8 no-margin-bottom-lg text-align-right">
+        <div>$12000</div>
+      </div>
+    </div>
+    <div class="container margin-bottom-double">
+      <div class="col lg-12 no-margin-bottom">
+        <div class="hr-2"></div>
+      </div>
+    </div>
+  </div>
+  <div class="section is-dark no-padding-bottom hidden-only-lg">
+    <div class="container flexh-justify-center flexh-align-center no-wrap margin-bottom-double">
+      <div class="col-2 column9 no-margin-bottom-lg">
+        <div class="nav-link on-dark delete-cart text-align-center"></div>
+      </div>
+    </div>
+    <div class="container margin-bottom-double">
+      <div class="col lg-12 no-margin-bottom">
+        <div class="hr-2"></div>
+      </div>
+    </div>
+    <div class="container flexh-justify-center flexh-align-center no-wrap margin-bottom-double">
+      <div class="col-2 column8 no-margin-bottom-lg">
+        <div class="is-bold">Product</div>
+      </div>
+      <div class="col-2 column8 no-margin-bottom-lg text-align-right"><a href="#" class="nav-link on-dark">BMW car brake disc</a></div>
+    </div>
+    <div class="container margin-bottom-double">
+      <div class="col lg-12 no-margin-bottom">
+        <div class="hr-2"></div>
+      </div>
+    </div>
+    <div class="container flexh-justify-center flexh-align-center no-wrap margin-bottom-double">
+      <div class="col-2 column8 no-margin-bottom-lg">
+        <div class="is-bold">Price</div>
+      </div>
+      <div class="col-2 column8 no-margin-bottom-lg text-align-right">
+        <div>$9000</div>
+      </div>
+    </div>
+    <div class="container margin-bottom-double">
+      <div class="col lg-12 no-margin-bottom">
+        <div class="hr-2"></div>
+      </div>
+    </div>
+    <div class="container flexh-justify-center flexh-align-center no-wrap margin-bottom-double">
+      <div class="col-2 column8 no-margin-bottom-lg">
+        <div class="is-bold">Quantity</div>
+      </div>
+      <div class="col-2 column8 no-margin-bottom-lg text-align-right">
+        <div class="no-margin-bottom display-flex w-form">
+          <form id="email-form" name="email-form" data-name="Email Form" class="form"><input type="text" class="no-margin-bottom w-input" maxlength="256" name="name-2" data-name="Name 2" id="name-2"></form>
+          <div class="w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container margin-bottom-double">
+      <div class="col lg-12 no-margin-bottom">
+        <div class="hr-2"></div>
+      </div>
+    </div>
+    <div class="container flexh-justify-center flexh-align-center no-wrap margin-bottom-double">
+      <div class="col-2 column8 no-margin-bottom-lg">
+        <div class="is-bold">Total</div>
+      </div>
+      <div class="col-2 column8 no-margin-bottom-lg text-align-right">
+        <div>$9000</div>
+      </div>
+    </div>
+    <div class="container margin-bottom-double">
+      <div class="col lg-12 no-margin-bottom">
+        <div class="hr-2"></div>
+      </div>
+    </div>
+  </div>
+  <div class="section is-dark hidden-only-lg padding-bottom-double">
+    <div class="container flexh-justify-center flexh-align-center no-wrap margin-bottom">
+      <div class="col-2 column9 no-margin-bottom-lg">
+        <div class="is-bold size-h3">Cart totals</div>
+      </div>
+    </div>
+    <div class="container flexh-justify-center flexh-align-center no-wrap margin-bottom-small">
+      <div class="col-2 column8 no-margin-bottom-lg">
+        <div class="is-bold low-text-contrast">Sub total</div>
+      </div>
+      <div class="col-2 column8 no-margin-bottom-lg">
+        <div class="is-bold">$30000</div>
+      </div>
+    </div>
+    <div class="container flexh-justify-center flexh-align-center no-wrap margin-bottom">
+      <div class="col-2 column8 no-margin-bottom-lg">
+        <div class="is-bold low-text-contrast">Total</div>
+      </div>
+      <div class="col-2 column8 no-margin-bottom-lg">
+        <div class="is-bold">$30000</div>
+      </div>
+    </div>
+    <div class="container flexh-justify-center flexh-align-center no-wrap">
+      <div class="col-2 column9 no-margin-bottom-lg">
+        <a href="#" class="button-primary lg-md-sm-margin-right xs-margin-bottom no-margin-right w-inline-block">
+          <div class="button-primary-text">Proceed to checkout</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="section section-footer-dark is-dark">
+    <div class="container margin-bottom">
+      <div class="col lg-3 md-12">
+        <h3 class="logotype is-medium no-margin-trbl">S O R U M</h3>
+      </div>
+      <div class="col lg-6 md-12">
+        <div class="flexh-space-between md-flex-vertical"><a href="#" class="footer-nav-link is-bold on-dark">About</a><a href="#" class="footer-nav-link is-bold on-dark">Services</a><a href="#" class="footer-nav-link is-bold on-dark">Blog</a><a href="#" class="footer-nav-link is-bold on-dark">Car Listing</a><a href="#" class="footer-nav-link is-bold on-dark">Spare Part</a><a href="#" class="footer-nav-link is-bold on-dark">Contact</a></div>
+      </div>
+      <div class="col lg-3 md-12">
+        <div class="flexh-justify-end md-flexh-justify-start">
+          <div class="fa-brand margin-right-small"></div>
+          <div class="fa-brand margin-right-small"></div>
+          <div class="fa-brand margin-right-small"></div>
+          <div class="fa-brand margin-right-small"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container flexh-justify-center md-flexh-justify-left">
+      <div class="col lg-6 margin-bottom">
+        <div class="low-text-contrast text-small flexh-space-between md-flex-vertical">
+          <div class="md-order-last">©2019 Sorum frmwrk. All rights reserved. </div><a href="#" class="footer-bottom-link on-dark">Privacy Policy</a><a href="#" class="footer-bottom-link on-dark">Term Of Service</a></div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+</body>
+</html>
