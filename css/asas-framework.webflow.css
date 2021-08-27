@@ -4083,19 +4083,19 @@ figcaption {
 }
 
 .slide-with-bg.bg1 {
-  background-image: url("../images/wall.jpg");
+  background-image: url("../images/porhead.jpg");
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .slide-with-bg.bg2 {
-  background-image: url('../images/wall.jpg');
+  background-image: url('../images/sponge.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .slide-with-bg.bg3 {
-  background-image: url('../images/wall.jpg');
+  background-image: url('../images/wrx.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
