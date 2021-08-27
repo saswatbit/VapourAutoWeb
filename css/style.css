@@ -58,9 +58,13 @@ h1 {
 	display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 10%;
+  width: 5%;
   height: auto;
-  
+}
+
+.centermargin{
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
