@@ -58,8 +58,17 @@ h1 {
 	display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 18%;
+  width: 5%;
+  height: auto;
 }
+
+.centermargin{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
 .showcase {
 	height: 100vh;
 	display: flex;
