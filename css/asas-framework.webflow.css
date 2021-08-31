@@ -610,13 +610,14 @@ figcaption {
 }
 
 .section.bg-dummy-image {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url('../images/sponge.jpg');
   background-position: 0px 0px;
   background-size: auto;
+  margin: auto;
 }
 
 .section.bg-dummy-image.no-padding-bottom.overflow-hidden {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url('../images/sponge.jpg');
 }
 
 .section.section-w-absolute-navbar {
@@ -654,13 +655,13 @@ figcaption {
 }
 
 .section.is-header.is-half-dark.section-with-bg {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url('../images/aboutus.jpg');
   background-position: 0% 50%;
   background-size: cover;
 }
 
 .section.is-header.is-half-dark.section-with-bg.bg2 {
-  background-image: url('https://via.placeholder.com/1000x600.png?text=IMAGE');
+  background-image: url('../images/aboutus.jpg');
 }
 
 .section.margin-top-large {
@@ -941,7 +942,7 @@ figcaption {
 }
 
 .navbar-container {
-   display: block;
+  display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px;
@@ -963,6 +964,7 @@ figcaption {
   -ms-flex-align: center;
   align-items: center;
 }
+
 
 .logotype {
   margin-bottom: 0px;
@@ -2419,7 +2421,7 @@ figcaption {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #1352ff;
+  
 }
 
 .c-contact1 {

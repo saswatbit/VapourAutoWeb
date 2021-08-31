@@ -116,6 +116,8 @@ h1 {
 }
 
 .btn {
+	margin-bottom: auto;
+	margin-left: auto;
 	display: inline-block;
 	padding: 10px 30px;
 	background: var(--primary-color);
@@ -149,3 +151,4 @@ h1 {
 .social a {
 	margin: 0 5px;
 }
+
