@@ -1,46 +1,62 @@
-@charset "utf-8";
-/* CSS Document */
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	background: black;
+	color: #333;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+	text-align: center;
+	height: 100vh;
+  }
+  h1 {
+	font-size: clamp(20px, 4vw, 30px);
+	line-height: 1.2;
+	margin-bottom: 40px;
+	color: #ffffff;
+  }
+  main {
+	max-width: 1020px;
+	margin: 0 auto;
+  }
+  p{
+	  color: #ffffff;
+  }
+  summary {
+	font-size: 1.25rem;
+	font-weight: 600;
+	background-color: #333;
+	color: #ffffff;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	outline: none;
+	border-radius: 0.25rem;
+	text-align: left;
+	cursor: pointer;
+	position: relative;
+  }
+  details[open] summary ~ * {
+	animation: sweep .5s ease-in-out;
+  }
+  @keyframes sweep {
+	0%    {opacity: 0; margin-top: -10px}
+	100%  {opacity: 1; margin-top: 0px}
+  }
+  details > summary::after {
+	position: absolute;
+	content: "+";
+	right: 20px;
+  }
+  details[open] > summary::after {
+	position: absolute;
+	content: "-";
+	right: 20px;
+  }
+  details > summary::-webkit-details-marker {
+	display: none;
+  }
 
-a{
-color: #282425!important;	
-}
-ul.nav.nav-tabs > li{
-	display: inline-block;
-	line-height: 50px;
-	height: 100%;
-	text-transform:uppercase;
-}
-ul.nav.nav-tabs > li a{
-	display:block;
-	padding:15px;
-	color: #282425!important;
-	
-}
-ul.nav.nav-tabs > li a:hover, ul.nav.nav-tabs > li:hover{
-	background:	#FB282F;
-	color:#fff!important;
-	text-decoration: none!important;
-}
-ul.nav.nav-tabs > li a.active{
-	background:	#282425;
-	color:#fff!important;
-	text-decoration: none!important;
-}
-.card-header {
-    background-color: rgb(245,245,245,0.3)!important;
-	border-radius:0!important;
-}
-.card{
-border-radius:0!important;
-}
-
-.card > .card-header a::before {
-    font-family: fontawesome;
-    content: "\f067 ";
-    color: #282425;
-    float: right;
-    margin-right: 15px;
-    font-weight: 400;
-    position: absolute;
-    right: 0;
-}
+	spacer{
+	height:1025px;
+	margin:1000px;
+  }
