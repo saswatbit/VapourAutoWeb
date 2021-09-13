@@ -26,6 +26,10 @@ h1 {
 	line-height: 1.2;
 	margin-bottom: 15px;
 }
+.marginsides {
+	margin-left: 25px;
+	margin-right: 25px;
+}
 
 .tab2{
 	tab-size: 2;
@@ -152,3 +156,7 @@ h1 {
 	margin: 0 5px;
 }
 
+marginsides{
+	margin-left: 50px;
+	margin-right: 50px;
+}
