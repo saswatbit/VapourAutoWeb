@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+  }
+  .services{
+    background: black;
+    text-align: center;
+  }
+  .services h1{
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 4px solid #1252ff;
+    font-size: 28px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+  }
+  .cen{
+    max-width: 1500px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+  }
+  .service{
+    display: inline-block;
+    width: calc(100% / 3);
+    margin: 0 -2px;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  .service i{
+    color: #1252ff;
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+
+  .service h2{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 10px;
+    margin: 0;
+    font-weight: bold;
+    color: #d3d3d3;
+  }
+ 
+  .service p{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  @media screen and (max-width: 800px) {
+    .service{
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .service{
+      width: 100%;
+    }
+  }
+  
