@@ -25,10 +25,12 @@ body{
     display: inline-block;
     width: calc(100% / 3);
     margin: 0 -2px;
-    padding: 20px;
+    padding: 25px;
     box-sizing: border-box;
     cursor: pointer;
     transition: 0.4s;
+    
+    
   }
 
   .service i{
@@ -49,7 +51,7 @@ body{
  
   .service p{
     color: white;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500;
   }
   @media screen and (max-width: 800px) {

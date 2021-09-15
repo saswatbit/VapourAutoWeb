@@ -663,7 +663,9 @@ figcaption {
 .section.is-header.is-half-dark.section-with-bg.bg2 {
   background-image: url('../images/aboutus.jpg');
 }
-
+.section.is-header.is-half-dark.section-with-bg.bg3 {
+  background-image: url('../images/contactus.jpg');
+}
 .section.margin-top-large {
   padding-top: 240px;
 }
@@ -4086,27 +4088,35 @@ figcaption {
 
 .slide-with-bg.bg1 {
   background-image: url("../images/porhead.jpg");
-  background-position: 50% 50%;
+  background-position: 50% 70%;
+ 
   background-size: cover;
 }
 
 .slide-with-bg.bg2 {
-  background-image: url('../images/sponge.jpg');
-  background-position: 50% 50%;
+  background-image: url('../images/enginesteam.jpg');
+  background-position: 50% 70%;
+ 
   background-size: cover;
 }
 
 .slide-with-bg.bg3 {
-  background-image: url('../images/wrx.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
-}
-.slide-with-bg.bg6 {
-  background-image: url("../images/subaru.jpg");
+  background-image: url('../images/carpet2.jpeg');
   background-position: 50% 70%;
-  height: 450px;
   background-size: cover;
 }
+.slide-with-bg.bg4 {
+  background-image: url("../images/sponge.jpg");
+  background-position: 50% 70%; 
+  background-size: cover;
+}
+
+.slide-with-bg.bg5 {
+  background-image: url("../images/bmw.jpg");
+  background-position: 70% 75%;
+  background-size: cover;
+}
+
 
 .col-2 {
   margin-bottom: 48px;
