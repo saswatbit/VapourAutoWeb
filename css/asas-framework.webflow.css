@@ -664,7 +664,8 @@ figcaption {
   background-image: url('../images/aboutus.jpg');
 }
 .section.is-header.is-half-dark.section-with-bg.bg3 {
-  background-image: url('../images/contactus.jpg');
+  background-image: url('../images/1_11.jfif');
+  background-position: 0% 55%;
 }
 .section.margin-top-large {
   padding-top: 240px;
